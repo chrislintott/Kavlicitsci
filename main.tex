@@ -1,12 +1,47 @@
-1. Introduction
+\documentclass{pasa}
+
+\title[Future Surveys and Citizen Science]{The Role of Citizen Science in Future Surveys in Astrophysics}
+\author[Lintott et al.]{Chris Lintott$^1$, Brooke Simmons$^1$, Campbell Allen$^1$, Andy J. Connolly$^1$, Peter T. Darch$^1$, Rob Fender$^1$, Lucy Fortson$^1$, Bryan Gaensler$^1$, Henry Hseih$^1$, Matt Jarvis$^1$, Sarah Kendrew$^1$, Sandor Kruk$^1$, Stuart Lynn$^1$, Karen L. Masters$^1$, Adam McMaster$^1$, Grant Miller$^1$, Robert C. Nichol$^1$, Edward Paget,$^1$ Stephen J. Roberts$^1$, Claudia Scarlata$^1$, Stephen Serjeant$^1$, Edwin Simpson$^1$, Rebecca Smethurst$^1$, Aprajita Verma$^1$, Shiang-Yu Wang$^1$, \and Kyle W. Willett $^1$\\ %$\thanks{This is an example of author footnote}\\
+\affil{$^1$Catz}%
+%\affil{$^2$This is  an example of Affiliation for Author 2}}%
+%%
+\jid{PASA}
+\doi{10.1017/pas.\the\year.xxx}
+\jyear{\the\year}
+
+% UNCOMMENT THE LINES BELOW IF YOU WISH TO USE BIBTEX
+%Citations may be made using the natbib commands \citet{},\citep{} etc.
+%%\usepackage[authoryear]{natbib}
+%\bibpunct{(}{)}{;}{a}{}{,}
+%\setlength{\bibsep}{0.3mm}
+
+\begin{document}%
+%
+\begin{abstract}
+
+...
+
+\end{abstract}
+%
+\begin{keywords}
+keyword1 -- keyword2 -- keyword3 -- keyword4 -- keyword5
+\end{keywords}
+%
+\maketitle%
+%
+\section{INTRODUCTION }
+\label{sec:intro}
 
 Citizen science in the form of distributed data analysis has made significant contributions to astronomical science through projects such as Galaxy Zoo which allow many hundreds of thousands of people to make contributions. As astronomers continue to develop surveys which will produce ever growing volumes of (often) publicly accessible data, it seems likely that further opportunities for such collaboration will occur, though the increasing sophistication of machine learning and the need in some cases for rapid classification may well requiring increasingly sophisticated frameworks to be put in place. This paper is the result of discussions at a workshop held at St Catherine's College in Oxford from April 15th-17th 2015, hosted by the Zooniverse and sponsored by the Kavli Foundation, at which participants sought to explore the possibilities for citizen science with the crop of surveys currently under development. 
 
-2. The problem : Surveys and big data
+\section{THE PROBLEM: SURVEYS AND BIG DATA }
+\label{sec:problem}
 
-3. Zooniverse architecture
+\section{ZOONIVERSE ARCHITECTURE}
+\label{sec:zoo}
 
-4. Real time classification
+\section{REAL TIME CLASSIFICATION}
+\label{sec:realtime}
 
 What 'real time' means depends on the science case. Radio transients observed within minutes of discovery have been found to be past their peak brightness, supernovae may need follow-up in days whereas surveys such as DES think of follow-up on timescales of months in deciding which objects should be targeted by fibres. However, for most of these use cases then \emph{classification} is still urgent so that decisions can be taken, even if action can wait. 
 
@@ -33,12 +68,16 @@ It is useful to think about problems involving streams of data for classificatio
 
 
 5. Machine Learning
+=======
+\section{MACHINE LEARNING}
+\label{sec:ml}
 
-6. Recommendations and Conclusions
+\section{RECOMMENDATIONS AND CONCLUSIONS}
+\label{sec:conclusions}
 
-\begin{enumerate}
+\begin{enumerate} 
 
-\item Progress is slowed or prevented when data is not shared freely; in many cases this is an inconvenience but in the case of monitoring for transients in, for example, large radio surveys a failure to rapidly share data or alerts is fatal to many interesting investigations. Commensal observing should be part of the standard plan for such surveys.
+\item Progress is slowed or prevented when data is not shared freely; in many cases this is an inconvenience but in the case of monitoring for transients in, for example, large radio surveys, a failure to rapidly share data or alerts is fatal to many interesting investigations. Commensal observing should be part of the standard plan for such surveys.
 
 \item Citizen science projects themselves can be built in an open and commensal way. Sharing code (or allowing volunteers to clone projects for their own use) will allow for rapid iteration during project development. This is not only useful, but points to a mode of working - projects set up to find one set of objects could quickly be adapted to find rarer ones as the project matures. 
 
@@ -50,4 +89,8 @@ It is useful to think about problems involving streams of data for classificatio
 
 \item [Education/Outreach piece?]
 
-\end{enumerate}
+\end{enumerate} 
+
+\end{document}
+
+
