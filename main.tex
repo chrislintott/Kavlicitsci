@@ -1,8 +1,10 @@
 \documentclass{pasa}
 
 \title[Future Surveys and Citizen Science]{The Role of Citizen Science in Future Surveys in Astrophysics}
-\author[Lintott et al.]{Chris Lintott$^1$, Brooke Simmons$^1$, Campbell Allen$^1$, Andy J. Connolly$^1$, Peter T. Darch$^1$, Rob Fender$^1$, Lucy Fortson$^1$, Bryan Gaensler$^1$, Henry Hseih$^1$, Matt Jarvis$^1$, Sarah Kendrew$^1$, Sandor Kruk$^1$, Stuart Lynn$^1$, Karen L. Masters$^1$, Adam McMaster$^1$, Grant Miller$^1$, Robert C. Nichol$^1$, Edward Paget,$^1$ Stephen J. Roberts$^1$, Claudia Scarlata$^1$, Stephen Serjeant$^1$, Edwin Simpson$^1$, Rebecca Smethurst$^1$, Aprajita Verma$^1$, Shiang-Yu Wang$^1$, \and Kyle W. Willett $^1$\\ %$\thanks{This is an example of author footnote}\\
-\affil{$^1$Catz}%
+\author[Lintott et al.]{Chris Lintott$^1$, Brooke Simmons$^1$, Campbell Allen$^1$, Andy J. Connolly$^1$, Peter T. Darch$^1$, Rob Fender$^1$, Lucy Fortson$^1$, Bryan Gaensler$^1$, Henry Hseih$^1$, Matt Jarvis$^1$, Sarah Kendrew$^1$, Sandor Kruk$^1$, Stuart Lynn$^1$, Karen L. Masters$^1$, Adam McMaster$^1$, Grant Miller$^1$, Robert C. Nichol$^1$, Edward Paget,$^1$ Stephen J. Roberts$^1$, Claudia Scarlata$^1$, Stephen Serjeant$^1$, Edwin Simpson$^1$, Rebecca Smethurst$^1$, Aprajita Verma$^1$, Shiang-Yu Wang$^1$, \and Kyle W. Willett $^1$
+\\ 
+\\%$\thanks{This is an example of author footnote}\\
+\affil{$^1$St. Catherine's College, Oxford University}}%
 %\affil{$^2$This is  an example of Affiliation for Author 2}}%
 %%
 \jid{PASA}
@@ -43,7 +45,7 @@ Citizen science in the form of distributed data analysis has made significant co
 \section{REAL TIME CLASSIFICATION}
 \label{sec:realtime}
 
-What 'real time' means depends on the science case. Radio transients observed within minutes of discovery have been found to be past their peak brightness, supernovae may need follow-up in days whereas surveys such as DES think of follow-up on timescales of months in deciding which objects should be targeted by fibres. However, for most of these use cases then \emph{classification} is still urgent so that decisions can be taken, even if action can wait. 
+What `real time' means depends on the science case. Radio transients observed within minutes of discovery have been found to be past their peak brightness, supernovae may need follow-up in days whereas surveys such as DES think of follow-up on timescales of months in deciding which objects should be targeted by fibres. However, for most of these use cases then \emph{classification} is still urgent so that decisions can be taken, even if action can wait. 
 
 It is useful to think about problems involving streams of data for classification as being divided by their cadence. Projects can usefully be divided into the following categories :
 
@@ -61,7 +63,7 @@ It is useful to think about problems involving streams of data for classificatio
 
 In all cases, the common problem is the identification of several different categories of interesting object alongside a variety of artefacts; we essentially face a filtering problem. This filtering is a classification problem, but the performance of classification is also effected by the bias of astronomers affected by time constraints. A striking example was the recent discovery of superluminous supernovae, of which $\sim 10$ are known. These objects are identified by their long decay times, and have been found in archival data in SDSS, but were not recognised as a category of interest until recently, despite many searches for transients in these data sets. 
 
-A similar story emerges from the identification, by citizen scientists, of a set of extreme star forming dwarf galaxies known as the 'Green Peas'; identified by visual inspection in the first instance, they can be identified through judicious cuts in colour/colour space. The citizen science task may be less repeated classification but rather the identification of categories of interest. Machine learning can then be used to 'amplify' categorization provided by inspection in a series of filters or, perhaps, a random forest populated by classifiers. 
+A similar story emerges from the identification, by citizen scientists, of a set of extreme star forming dwarf galaxies known as the `Green Peas'; identified by visual inspection in the first instance, they can be identified through judicious cuts in colour/colour space. The citizen science task may be less repeated classification but rather the identification of categories of interest. Machine learning can then be used to `amplify' categorization provided by inspection in a series of filters or, perhaps, a random forest populated by classifiers. 
 
 An example project could proceed by starting with a simple set of questions about expected common object types. As classification proceeds we should expect the performance of algorithms to improve as a large training set is built up. This will allow the filtering of the dataset to remove common object types, increasing the potential for rarer objects to be found. Classification instructions can then be adjusted to concentrate on these new targets, until they too obtain training sets large enough for significant algorithmic filtering. The advantages of such a scheme include the fact that it is responsive; it is capable of adjusting to new categories of interest and to improvements in algorithmic performance. 
 
