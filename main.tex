@@ -8,6 +8,30 @@ Citizen science in the form of distributed data analysis has made significant co
 
 4. Real time classification
 
+What 'real time' means depends on the science case. Radio transients observed within minutes of discovery have been found to be past their peak brightness, supernovae may need follow-up in days whereas surveys such as DES think of follow-up on timescales of months in deciding which objects should be targeted by fibres. However, for most of these use cases then \emph{classification} is still urgent so that decisions can be taken, even if action can wait. 
+
+In all cases, the common problem is the identification of several different categories of interesting object alongside a variety of artefacts; we essentially face a filtering problem. This filtering is a classification problem, but the performance of classification is also effected by the bias of astronomers affected by time constraints. A striking example was the recent discovery of superluminous supernovae, of which $\sim 10$ are known. These objects are identified by their long decay times, and have been found in archival data in SDSS, but were not recognised as a category of interest until recently, despite many searches for transients in these data sets. 
+
+A similar story emerges from the identification, by citizen scientists, of a set of extreme star forming dwarf galaxies known as the 'Green Peas'; identified by visual inspection in the first instance, they can be identified through judicious cuts in colour/colour space. The citizen science task may be less repeated classification but rather the identification of categories of interest. Machine learning can then be used to 'amplify' categorization provided by inspection in a series of filters or, perhaps, a random forest populated by classifiers. 
+
+An example project could proceed by starting with a simple set of questions about expected common object types. As classification proceeds.... XXXXXXX
+
+It is useful to think about problems involving streams of data for classification as being divided by their cadence. Projects can usefully be divided into the following categories :
+
+\begin{itemize}
+
+\item \textbf{Batch projects:} Provide data on, for example, monthly timescales. Examples include projects using the main (annual) LSST data release.
+
+\item \textbf{Sparse projects:} Alerts at irregular intervals when intervention is required. Examples include supernova identification with pre-filtering. 
+
+\item \textbf{Continuous projects:} These projects would require substantial datasets to be reviewed, with enough data to keep volunteers busy all the time (rather than requiring a small number of actions after an alert). 
+
+\item \textbf{Campaign projects:} Similar to continuous projects, but running for a short while; an example was the Snapshot Supernova project which reviewed Skymapper data while PESSTO follow-up was available. 
+
+\end{itemize}
+
+
+
 5. Machine Learning
 
 6. Recommendations and Conclusions
@@ -16,7 +40,7 @@ Citizen science in the form of distributed data analysis has made significant co
 
 \item Progress is slowed or prevented when data is not shared freely; in many cases this is an inconvenience but in the case of monitoring for transients in, for example, large radio surveys a failure to rapidly share data or alerts is fatal to many interesting investigations. Commensal observing should be part of the standard plan for such surveys.
 
-\item Citizen science projects themselves can be built in an open way. Sharing code (or allowing volunteers to clone projects for their own use) will allow for rapid iteration during project development. This is not only useful, but points to a mode of working - projects set up to find one set of objects could quickly be adapted to find rarer ones as the project matures. 
+\item Citizen science projects themselves can be built in an open and commensal way. Sharing code (or allowing volunteers to clone projects for their own use) will allow for rapid iteration during project development. This is not only useful, but points to a mode of working - projects set up to find one set of objects could quickly be adapted to find rarer ones as the project matures. 
 
 \item Despite the progress of computer vision, we expect there to still be a meaningful role for citizen scientists in the era of LSST and SKA-scale data. Routine classification of common objects will rapidly be tractable automatically, but anomaly detection and the identification of more unusual objects will still require some degree of human intervention. 
 
