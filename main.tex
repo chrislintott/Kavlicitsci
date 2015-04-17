@@ -10,12 +10,6 @@ Citizen science in the form of distributed data analysis has made significant co
 
 What 'real time' means depends on the science case. Radio transients observed within minutes of discovery have been found to be past their peak brightness, supernovae may need follow-up in days whereas surveys such as DES think of follow-up on timescales of months in deciding which objects should be targeted by fibres. However, for most of these use cases then \emph{classification} is still urgent so that decisions can be taken, even if action can wait. 
 
-In all cases, the common problem is the identification of several different categories of interesting object alongside a variety of artefacts; we essentially face a filtering problem. This filtering is a classification problem, but the performance of classification is also effected by the bias of astronomers affected by time constraints. A striking example was the recent discovery of superluminous supernovae, of which $\sim 10$ are known. These objects are identified by their long decay times, and have been found in archival data in SDSS, but were not recognised as a category of interest until recently, despite many searches for transients in these data sets. 
-
-A similar story emerges from the identification, by citizen scientists, of a set of extreme star forming dwarf galaxies known as the 'Green Peas'; identified by visual inspection in the first instance, they can be identified through judicious cuts in colour/colour space. The citizen science task may be less repeated classification but rather the identification of categories of interest. Machine learning can then be used to 'amplify' categorization provided by inspection in a series of filters or, perhaps, a random forest populated by classifiers. 
-
-An example project could proceed by starting with a simple set of questions about expected common object types. As classification proceeds.... XXXXXXX
-
 It is useful to think about problems involving streams of data for classification as being divided by their cadence. Projects can usefully be divided into the following categories :
 
 \begin{itemize}
@@ -30,6 +24,16 @@ It is useful to think about problems involving streams of data for classificatio
 
 \end{itemize}
 
+
+In all cases, the common problem is the identification of several different categories of interesting object alongside a variety of artefacts; we essentially face a filtering problem. This filtering is a classification problem, but the performance of classification is also effected by the bias of astronomers affected by time constraints. A striking example was the recent discovery of superluminous supernovae, of which $\sim 10$ are known. These objects are identified by their long decay times, and have been found in archival data in SDSS, but were not recognised as a category of interest until recently, despite many searches for transients in these data sets. 
+
+A similar story emerges from the identification, by citizen scientists, of a set of extreme star forming dwarf galaxies known as the 'Green Peas'; identified by visual inspection in the first instance, they can be identified through judicious cuts in colour/colour space. The citizen science task may be less repeated classification but rather the identification of categories of interest. Machine learning can then be used to 'amplify' categorization provided by inspection in a series of filters or, perhaps, a random forest populated by classifiers. 
+
+An example project could proceed by starting with a simple set of questions about expected common object types. As classification proceeds we should expect the performance of algorithms to improve as a large training set is built up. This will allow the filtering of the dataset to remove common object types, increasing the potential for rarer objects to be found. Classification instructions can then be adjusted to concentrate on these new targets, until they too obtain training sets large enough for significant algorithmic filtering. The advantages of such a scheme include the fact that it is responsive; it is capable of adjusting to new categories of interest and to improvements in algorithmic performance. 
+
+In essence, this proposal recognises that whether or not real time observing is happen what is important is on-the-fly learning. Training sets developed dynamically could respond to changes in conditions or instrument performance, but more importantly also to the changing characteristics of a filtered dataset. This is especially important as training sets for rarer objects can only be produced once more common ones have been removed. An ambitious system - one which is truly efficient - would spend about the same amount of time assembling a training set for an algorithm as it takes to run it. 
+
+At present, responsive classification is seen in Zooniverse projects such as Space Warps, Planet Hunters and Disk Detective as taking place through the discussion forums provided. In these venues, subsets of volunteers have proved capable of developing detailed and complex classifications of problematic objects, but using this information in a programatic way is hard. Future projects should probably look to design modes of interaction that lie between hard-wired classification and free discussion if this sort of project is to be truly useful. 
 
 
 5. Machine Learning
