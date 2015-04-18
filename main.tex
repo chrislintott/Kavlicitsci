@@ -42,10 +42,10 @@ Citizen science in the form of distributed data analysis has made significant co
 \section{ZOONIVERSE ARCHITECTURE}
 \label{sec:zoo}
 
-\section{REAL TIME CLASSIFICATION}
+\section{REAL-TIME CLASSIFICATION}
 \label{sec:realtime}
 
-What `real time' means depends on the science case. Radio transients observed within minutes of discovery have been found to be past their peak brightness, supernovae may need follow-up in days whereas surveys such as DES think of follow-up on timescales of months in deciding which objects should be targeted by fibres. However, for most of these use cases then \emph{classification} is still urgent so that decisions can be taken, even if action can wait. 
+What `real-time' means depends on the science case. Radio transients observed within minutes of discovery have been found to be past their peak brightness, supernovae may need follow-up in days whereas surveys such as DES think of follow-up on timescales of months in deciding which objects should be targeted by fibres. However, for most of these use cases then \emph{classification} is still urgent so that decisions can be taken, even if action can wait. 
 
 It is useful to think about problems involving streams of data for classification as being divided by their cadence. Projects can usefully be divided into the following categories :
 
@@ -63,7 +63,7 @@ It is useful to think about problems involving streams of data for classificatio
 
 In all cases, the common problem is the identification of several different categories of interesting object alongside a variety of artefacts; we essentially face a filtering problem. This filtering is a classification problem, but the performance of classification is also effected by the bias of astronomers affected by time constraints. A striking example was the recent discovery of superluminous supernovae, of which $\sim 10$ are known. These objects are identified by their long decay times, and have been found in archival data in SDSS, but were not recognised as a category of interest until recently, despite many searches for transients in these data sets. 
 
-A similar story emerges from the identification, by citizen scientists, of a set of extreme star forming dwarf galaxies known as the `Green Peas'; identified by visual inspection in the first instance, they can be identified through judicious cuts in colour/colour space. The citizen science task may be less repeated classification but rather the identification of categories of interest. Machine learning can then be used to `amplify' categorization provided by inspection in a series of filters or, perhaps, a random forest populated by classifiers. 
+A similar story emerges from the identification, by citizen scientists, of a set of extreme star forming dwarf galaxies known as the `Green Peas'; identified by visual inspection in the first instance, they can be identified through judicious cuts in colour/colour space. The citizen science task may be less repeated classification but rather the identification of categories of interest. Machine learning can then be used to `amplify' categorization provided by inspection in a series of filters or, perhaps, a Random Forest populated by classifiers. 
 
 An example project could proceed by starting with a simple set of questions about expected common object types. As classification proceeds we should expect the performance of algorithms to improve as a large training set is built up. This will allow the filtering of the dataset to remove common object types, increasing the potential for rarer objects to be found. Classification instructions can then be adjusted to concentrate on these new targets, until they too obtain training sets large enough for significant algorithmic filtering. The advantages of such a scheme include the fact that it is responsive; it is capable of adjusting to new categories of interest and to improvements in algorithmic performance. 
 
@@ -87,25 +87,27 @@ Existing projects have demonstrated the potential for outreach and education usi
 
 \begin{enumerate} 
 
-\item We expect that while machine learning advances will allow algorithmic approaches to solve common or simple data driven problems, there will still be problems that require human intervention (examples include anomaly detection, the identification of rare objects, or cases where there are a wide variety of morphologies). For many well-developed science cases even $99\%$ accurate classifiers will not be sufficient. 
+\item We expect that while machine learning advances will allow algorithmic approaches to solve many common or simple data driven problems, there will still be problems that require human intervention. Examples include anomaly detection, the identification of rare objects, or cases where there are a wide variety of morphologies. For many well-developed science cases, even algorithms approaching $99\%$ accuracy will be insufficient to prevent significant missed discoveries in future survey volumes.
 
-\item The improvement we want to see in machine learning will come about in many cases from the development of large training sets of the kind provided by citizen science.  This sort of validation and assessment of machine learning will be needed while surveys are operational. 
+\item The improvement we expect and want to see in machine learning will come about in many cases from the development of large training sets of the kind provided by citizen science.  This sort of validation and assessment of machine learning will be needed while surveys are operational. 
 
+% "we need to explore" is perhaps not ideal wording given we've just had a multi-day workshop designed to explore. 
 \item We expect citizen science to be useful throughout the process of data collection and analysis; we need to explore how to tie different tasks together, allow volunteers to work at different levels and to be proactive in leading their own investigations and in shaping the scientific process. Tool development beyond simple classification interfaces will also be needed. 
 
-\item The hardest class of projects given our current technology is the case where continuous inspection of large data sets in near-real time is required for exploratory analysis. In this case, dynamic combinations of human and machine classifications will be needed, and projects which can explore how to do this well should be prioritised in the next few years. 
+\item The most challenging class of projects given our current technology is that in which continuous inspection of large data sets in near-real time is required for exploratory analysis. In this case, dynamic combinations of human and machine classifications will be needed, and projects which can explore how to do this well should be prioritised in the next few years. 
 
-\item Automated extraction of the knowledge contained within Zooniverse talk (e.g. the discussion within a forum of unusual objects or new classifications) provides the ability to enhance and expand on classifications and annotations predefined by a project. This has the potential to enable open and exploratory data analyses with citizen science projects.
+\item Automated extraction of the knowledge contained within broader discussions of unusual objects or new classifications by citizen scientists (e.g., within Zooniverse Talk, an open discussion forum parallel to directed classification tasks) provides the ability to enhance and expand on classifications and annotations predefined by a project. This has the potential to enable open and exploratory data analyses with citizen science projects.
 
 \item Best practices for citizen science: 
 \begin{enumerate}
 \item Simplicity is good; tasks should be understandable and avoid using jargon. The typical interface used by astronomers is not necessarily best for volunteers. 
-\item We shouldn't use complex weightings or task assignment unless we have to; if the data rate allows then system design for simple systematics and selection function. This is data like any other data, it must be calibrated, and gold standard data or simulations used to make that calibration.
-\item Data produced by a citizen science project should (after a suitable time) be made public. 
+\item We shouldn't use complex weightings or task assignment unless we have to. If the data rate allows, then the system should be designed to simplify systematics and the selection function. 
+\item Citizen science data, like any other data, must be calibrated; gold standard data or simulations must be used to make that calibration.
+\item Data produced by a citizen science project should (after a suitable time) be made public. %The parenthetical statement here seems to be in contradiction with the commensality argument unless we explain it further. Perhaps the definition of "a suitable time" should depend on the urgency of the science case, to ensure the scientific community can make effective use of the data set. 
 \item It is necessary to engage with the broad citizen science community. We expect science teams who invest time and resources in encouraging education and outreach around their projects to benefit from greater scientific return in addition to impact. 
 \end{enumerate}
 
-\item This is a tool for science; attention needs to be paid to data curation such that data is presented in a suitable form both for the volunteers and to enable the scientific returns that are expected. 
+\item Citizen science is a tool for science; attention needs to be paid to data curation such that data is presented in a form suitable both for the volunteers and to enable the scientific returns that are expected. 
 	
 \item Lack of data sharing is fatal to many interesting investigations, and maximal commensal observing should be part of the standard plan for such surveys. A failure to do this will inhibit projects including cross identification of sources and the development of new citizen science and machine learning approaches. Real-time classification will only be of use if the policies and resources are available for follow-up. 
 
